@@ -7,4 +7,6 @@ declare -a StringArray=("101-at3-realsense-libusb.rules" "102-at3-dai.rules" "10
 for val in ${StringArray[@]}; do
    curl https://raw.githubusercontent.com/SVD-Lab/udevs_public/main/${val} --output /etc/udev/rules.d/${val}
 done
+
+sudo udevadm control --reload-rules
 ```
