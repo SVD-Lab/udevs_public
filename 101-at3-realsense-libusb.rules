@@ -115,6 +115,6 @@ SUBSYSTEMS=="usb", ENV{ID_VENDOR_ID}=="8086", ENV{ID_MODEL_ID}=="0b64", ACTION==
 SUBSYSTEMS=="usb", ENV{ID_VENDOR_ID}=="8086", ENV{ID_MODEL_ID}=="0b68", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_depth'"
 
 # Intel RealSense devices (Movidius, T265)
-SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/af3*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
-SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/b37*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
-SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/2150*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
+# SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/af3*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
+# SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/b37*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
+# SUBSYSTEMS=="usb", ENV{PRODUCT}=="3e7/2150*", ACTION=="remove", RUN+="/bin/sh -c 'rm -f /tmp/rs_t265'"
